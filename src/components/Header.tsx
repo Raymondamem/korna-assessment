@@ -1,12 +1,9 @@
-import { FcMenu } from "react-icons/fc";
-import { FaRegEdit } from "react-icons/fa";
-import { PiBellThin } from "react-icons/pi";
 import { CiSearch } from "react-icons/ci";
 
 export default function Header() {
   return (
     <header className="w-full h-fit border-b-1 border-b-gray-100">
-      <nav className="container mx-auto flex items-center justify-between py-2">
+      <nav className="w-[96%] mx-auto flex items-center justify-between py-2">
         <div className="inline-flex gap-2 items-center space-x-2">
           <span className="block w-fit h-fit text-3xl font-bold">
             {/* <FcMenu /> */}
@@ -43,7 +40,7 @@ export default function Header() {
           </span>
           <label
             htmlFor="search"
-            className="block w-fit h-fit bg-gray-1 bg-gray-100 relative border-none rounded-full"
+            className="block w-fit h-fit bg-gray-1 bg-gray-100 relative border-none rounded-full max-md:hidden"
           >
             <span
               id="search"
@@ -62,8 +59,15 @@ export default function Header() {
         <div className="flex items-center space-x-4">
           <button
             type="button"
+            title="notifications"
+            className="block w-fit h-fit p-2 text-2xl font-light md:hidden text-gray-500"
+          >
+            <CiSearch />
+          </button>
+          <button
+            type="button"
             title="edit"
-            className="inline-flex items-center gap-2 font-light text-gray-500! py-2 rounded-full"
+            className="inline-flex items-center gap-2 font-light text-gray-500! py-2 rounded-full max-md:hidden"
           >
             <span className="block w-fit h-fit text-xl font-light!">
               {/* <FaRegEdit /> */}
@@ -89,7 +93,7 @@ export default function Header() {
           <button
             type="button"
             title="notifications"
-            className="block w-fit h-fit p-2 text-2xl font-light text-gray-500_"
+            className="block w-fit h-fit p-2 text-2xl font-light max-md:hidden text-gray-500_"
           >
             {/* <PiBellThin /> */}
             <svg

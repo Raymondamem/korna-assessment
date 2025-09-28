@@ -36,7 +36,7 @@ export default function TabFirstScreen() {
               />
             </span>
           </div>
-          <div className="flex justify-between items-center gap-2 w-4/6 h-fit mt-2">
+          <div className="flex justify-between items-center gap-2 w-4/6 max-md:w-full h-fit mt-2">
             <div className="flex justify-between items-center gap-4 w-fit h-fit">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -108,7 +108,7 @@ export default function TabFirstScreen() {
                   ></path>
                 </svg>
               </span>
-              <span className="block w-fit h-fit font-light text-xs">
+              <span className="block w-fit h-fit font-light text-xs max-md:hidden">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="24"
