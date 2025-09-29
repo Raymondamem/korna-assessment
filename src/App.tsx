@@ -1,6 +1,6 @@
 import { useState } from "react";
 import Header from "./components/Header";
-import AsideComponent from "./components/AsideComponent";
+import AsideComponent from "./components/AsideComponents/AsideComponent";
 import TabHeader from "./components/TabComponents/TabHeader";
 import TabFirstScreen from "./components/TabComponents/TabFirstScreen";
 import TabSecondScreen from "./components/TabComponents/TabSecondScreen";
