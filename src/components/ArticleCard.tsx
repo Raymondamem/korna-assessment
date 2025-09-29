@@ -1,10 +1,10 @@
 import me from "../assets/me.jpg";
-import { ReactComponent as StarIcon } from "../assets/star.svg";
-import { ReactComponent as ClapIcon } from "../assets/clap.svg";
-import { ReactComponent as ResponseIcon } from "../assets/response.svg";
-import { ReactComponent as MinusCircleIcon } from "../assets/minus-circle.svg";
-import { ReactComponent as BookmarkIcon } from "../assets/bookmark.svg";
-import { ReactComponent as MoreIcon } from "../assets/more.svg";
+import StarIcon from "../assets/star.svg?react";
+import ClapIcon from "../assets/clap.svg?react";
+import ResponseIcon from "../assets/response.svg?react";
+import MinusCircleIcon from "../assets/minus-circle.svg?react";
+import BookmarkIcon from "../assets/bookmark.svg?react";
+import MoreIcon from "../assets/more.svg?react";
 
 interface ArticleCardProps {
   authorName?: string;

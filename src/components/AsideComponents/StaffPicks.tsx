@@ -1,5 +1,5 @@
 import me from "../../assets/me.jpg";
-import { ReactComponent as StarIcon } from "../../assets/star.svg";
+import StarIcon from "../../assets/star.svg?react";
 
 export default function StaffPicksCard() {
   return (
