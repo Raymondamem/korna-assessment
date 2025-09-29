@@ -8,7 +8,7 @@ export default function Header() {
         Open in app{" "}
         <img src={LinkIcon} alt="Link" className="w-2.5 h-2.5" />
       </p>
-      <header className="w-full h-fit border-b-1 border-b-gray-100">
+      <header className="w-full h-fit border-b-1 border-b-gray-100 md:sticky md:top-0 md:bg-white md:z-50">
         <nav className="w-[96%] mx-auto flex items-center justify-between py-2">
           <div className="inline-flex gap-3 items-center space-x-2">
             <span className="block w-fit h-fit text-3xl font-bold">

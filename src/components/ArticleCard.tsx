@@ -25,7 +25,7 @@ export default function ArticleCard({
 }: ArticleCardProps) {
   return (
     <div className="w-full h-fit mb-4 border-b-1 border-gray-200 py-4">
-      <div className="w-full h-fit flex justify-between items-stretch gap-4">
+      <div className="w-full h-fit flex justify-between items-center gap-4">
         <div className="w-5/6 h-fit">
           <span className="flex justify-between items-center gap-2 w-fit h-fit mb-4">
             <img
@@ -38,8 +38,8 @@ export default function ArticleCard({
               <span className="text-gray-500">by</span> {authorName}
             </span>
           </span>
-          <p className="font-bold text-[1.5rem]  mb-4">{title}</p>
-          <span className="block w-fit h-fit font-light text-md text-gray-700">
+          <p className="font-bold text-[1.5rem] mb-4 line-clamp-3">{title}</p>
+          <span className="block font-light text-md text-gray-700 line-clamp-3">
             {subtitle}
           </span>
         </div>
@@ -53,11 +53,11 @@ export default function ArticleCard({
           <span className="block w-fit h-fit font-light text-xs">
             {timeAgo}
           </span>
-          <span className="inline-flex justify-center items-center gap-0 cursor-pointer select-none text-xs">
+          <span className="inline-flex justify-center items-center gap-0 cursor-pointer select-none text-xs max-md:hidden">
             <ClapIcon className="w-4 h-4" />
             <span>{claps}</span>
           </span>
-          <span className="flex justify-between items-center gap-1 w-fit h-fit">
+          <span className="flex justify-between items-center gap-1 w-fit h-fit max-md:hidden">
             <ResponseIcon className="w-4 h-4" />
             <span className="text-xs">{responses}</span>
           </span>

@@ -15,7 +15,7 @@ export default function StaffPicksCard() {
           <span className="text-gray-500">by</span> Zulie @ Medium
         </span>
       </span>
-      <p className="font-semibold text-md  mb-1">
+      <p className="font-semibold text-md mb-1 line-clamp-3">
         How this brand strategist uses Medium to explore ideas, repurpos content
         and land clients
       </p>

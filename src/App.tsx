@@ -11,8 +11,8 @@ function App() {
   return (
     <div className="w-full min-h-fit">
       <Header />
-      <div className="w-full min-h-screen lg:grid lg:grid-cols-[1fr_350px] lg:grid-rows-1">
-        <main className="w-4/5 mx-auto h-fit px-18_ py-8">
+      <div className="w-full min-h-screen lg:grid lg:grid-cols-[1fr_350px] lg:grid-rows-1 xl:w-[1200px] xl:mx-auto xl:gap-8 max-xl:block max-xl:px-4">
+        <main className="w-4/5 mx-auto h-fit pb-8">
           <TabHeader tab={tab} setTab={setTab} />
           {tab ? <TabFirstScreen /> : <TabSecondScreen />}
         </main>
